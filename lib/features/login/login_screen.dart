@@ -99,7 +99,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       value!.isEmpty ? 'Please enter your password' : null,
                 ),
                 Align(
-                  alignment: AlignmentGeometry.topRight,
+                  alignment: Alignment.topRight,
+                 // alignment: AlignmentGeometry.topRight,
                   child: TextButton(
                       onPressed: () {},
                       child: Text(
@@ -117,7 +118,9 @@ class _LoginScreenState extends State<LoginScreen> {
                         minimumSize: const Size(double.infinity, 50),
                         backgroundColor: Colors.blueAccent,
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadiusGeometry.circular(10)),
+                          borderRadius: BorderRadius.circular(10),
+                            //borderRadius: BorderRadiusGeometry.circular(10)
+                            ),
                         fixedSize: const Size.fromHeight(50.0)),
                     onPressed: () {},
                     child: Text(
@@ -214,7 +217,10 @@ class InputField extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      spacing: 10,
+      
+
+     // spacing: 10,
+      //mafe4 7aga esmaha spacing yasta mathzar4
       children: [
         Text(
           paramater,
@@ -224,10 +230,12 @@ class InputField extends StatelessWidget {
           controller: controller,
           validator: validator,
           decoration: InputDecoration(
-            hint: Text(
-              hint,
-              style: TextStyle(color: Colors.grey),
-            ),
+            hintText: hint,
+            // hintText m4 hint 
+            // hint: Text(
+            //   hint,
+            //   style: TextStyle(color: Colors.grey),
+            // ),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
             ),
