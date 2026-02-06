@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:todo_team_project/features/splash/splash_screen.dart';
 
 void main() {
   runApp(const MainApp());
 }
 
 class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+   const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Image.asset("assets/git_repo.png"),
-        ),
-      ),
+    return MaterialApp(
+      home: SplashScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
